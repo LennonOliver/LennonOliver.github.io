@@ -45,7 +45,7 @@ body {
     width: 50px;
     padding-right: 10px;
     filter: grayscale(100%); /* Convertit l'image en noir et blanc par défaut */
-    transition: filter 0.3s; /* Ajoute une transition pour un effet plus fluide */
+    transition: filter 0.1s; /* Ajoute une transition pour un effet plus fluide */
     margin-bottom: 20px;
 }
 
@@ -134,4 +134,9 @@ nav li:hover {
 
 .margeli {
     margin-left: 2em;
+}
+
+.margeBleue {
+    margin-left: 2em;
+    color: skyblue;
 }
