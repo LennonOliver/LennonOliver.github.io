@@ -70,18 +70,24 @@ nav ul {
     justify-content: center;
 }
 
-nav li {
-    margin-right: 100px;
+nav ul li {
+    margin-right: 25px;
     margin-top: 20px;
     font-weight: bolder;
     font-size: 20px;
     margin-bottom: 20px;
+    transition: transform 0.5s ease-in-out; /* Ajout de la transition à l'élément li */
 }
 
-nav a {
+nav ul li a {
     text-decoration: none;
-    color:#F9B872;
+    color: #F9B872;
 }
+
+nav li:hover {
+    transform: scale(1.1);
+}
+
 
 .presentationText {
     text-align: center;
@@ -90,8 +96,15 @@ nav a {
 }
 
 .presentationText a {
-    color:#F9B872;
+    color: #F9B872;
+    text-decoration: none; /* Supprime le soulignement initial */
+    transition: text-decoration 1s ease-in-out; /* Ajout de la transition au texte décoratif */
 }
+
+.presentationText a:hover {
+    text-decoration: underline; /* Ajout du soulignement au survol */
+}
+
 
 .container {
     justify-content: center;
@@ -107,11 +120,13 @@ nav a {
 }
 
 .cv {
-    border: 2px groove;
+    border-radius: 1%;
     width: 800px;
     align-self: center;
     font-size: 17px;
     color: #DDD0C8;
+    background-color: ;
+    box-shadow: 15px 10px 50px rgba(0, 0, 0, 1);
 }
 
 .marge {
