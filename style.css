@@ -111,7 +111,6 @@ nav li:hover {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 10px;
     margin-left: 310px;
 }
 
@@ -167,7 +166,7 @@ footer {
     display: none;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 1025px) {
     body {
         margin: 0;
         padding: 0;
@@ -226,5 +225,9 @@ footer {
 
     nav ul li {
         margin: 10px; /* Ajuster la marge autour de chaque élément */
+    }
+
+    .reseaux a img {
+        filter: grayscale(0%); /* Convertit l'image en noir et blanc par défaut */
     }
 }
