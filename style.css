@@ -140,3 +140,15 @@ nav li:hover {
     margin-left: 2em;
     color: skyblue;
 }
+
+.bleuHtml {
+    color: dodgerblue;
+}
+
+.bleuClairHtml {
+    color: skyblue;
+}
+
+.orangeHtml {
+    color: #F9B872;
+}
