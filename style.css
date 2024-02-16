@@ -125,7 +125,6 @@ nav li:hover {
 .container h1 {
     text-align: center;
     color: #CAC0B3;
-    box-shadow: 15px 10px 50px rgba(0, 0, 0, 1);
     border-radius: 1%;
     align-self: center;
     padding-left: 10px;
