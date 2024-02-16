@@ -161,7 +161,6 @@ footer {
 }
 
 @media only screen and (max-width: 550px) {
-
     body {
         margin: 0;
         padding: 0;
@@ -179,7 +178,6 @@ footer {
         box-shadow: none; /* Supprimer l'ombre */
         padding: 0px;
         margin-top: 20px; /* Ajouter une marge pour séparer le header */
-        
     }
 
     .presentation h1 {
@@ -201,5 +199,17 @@ footer {
         color: #DDD0C8;
         padding-top: 30px;
     }
-    
+
+    nav ul {
+        display: flex;
+        flex-direction: row; /* Aligner les éléments en ligne (côte à côte) */
+        justify-content: center; /* Centrer horizontalement les éléments enfants */
+        text-align: center; /* Centrer le texte à l'intérieur de li */
+        margin: 0; /* Réinitialiser la marge */
+        padding: 0; /* Réinitialiser le padding */
+    }
+
+    nav ul li {
+        margin: 10px; /* Ajuster la marge autour de chaque élément */
+    }
 }
