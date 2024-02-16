@@ -30,6 +30,10 @@ body {
     padding-bottom: 20px;
 }
 
+.presentation h1:hover {
+    color: #F9B872;
+}
+
 .maphoto {
     width: 75%;
     height: auto;
@@ -39,6 +43,7 @@ body {
 
 .reseaux {
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .reseaux a img {
@@ -93,6 +98,9 @@ nav li:hover {
     font-size: 18px;
     margin-bottom: 20px;
     padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 15px 10px 50px rgba(0, 0, 0, 1);
+    border-radius: 5px;
 }
 
 .presentationText a {
@@ -122,6 +130,7 @@ nav li:hover {
     align-self: center;
     padding-left: 10px;
     padding-right: 10px;
+    font-family: 'Raleway', sans-serif;
     
 }
 
