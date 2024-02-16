@@ -43,10 +43,9 @@ body {
 
 .reseaux a img {
     width: 50px;
-    padding-right: 10px;
+    margin-right: 10px;
     filter: grayscale(100%); /* Convertit l'image en noir et blanc par défaut */
     transition: filter 0.1s; /* Ajoute une transition pour un effet plus fluide */
-    margin-bottom: 20px;
 }
 
 .reseaux a img:hover {
@@ -93,6 +92,7 @@ nav li:hover {
     text-align: center;
     font-size: 18px;
     margin-bottom: 20px;
+    padding-top: 20px;
 }
 
 .presentationText a {
@@ -187,7 +187,8 @@ footer {
 
     .container {
         left: 0; /* Réinitialiser la position à gauche */
-        margin-left: 0;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .copyright {
