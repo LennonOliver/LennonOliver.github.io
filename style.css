@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    background-color: #323232;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.monNom {
+    flex: 1;
+    font-size: 1.1em;
+    transition: color 0.1s ease-in-out;
+}
+
+.monNom a {
+    text-decoration: none;
+    color: #F9B872;
+}
+
+.monNom a:hover {
+    color: white;
+}
+
+nav {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+}
+
+.reseaux {
+    flex: 1;
+    text-align: right;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header nav ul li {
+    display: inline;
+    font-size: 2em;
+    padding-right: 2%;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #F9B872;
+    transition: color 0.1s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: white;
+}
+
+
+.logoreseau {
+    width: 30px;
+    filter: grayscale(100%);
+    transition: filter 0.1s;
+    margin-right: 1%;
+}
+
+.logoreseau a {
+    width: 30px;
+    filter: grayscale(100%);
+    transition: filter 0.1s;
+    margin-right: 2%;
+    border-radius: 50%;
+}
+
+.logoreseau:hover {
+    filter: grayscale(0%);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.partieGauche {
+    flex: 1;
+    text-align: right;
+    width: calc(33.33% - 20px);
+    align-self: center;
+    opacity: 0;
+    animation: appearAnimation 1s ease-in-out forwards;
+}
+
+.partieDroite {
+    flex: 1;
+    text-align: left;
+    align-self: center;
+}
+
+.maPhoto {
+    width: 50%;
+    border-radius: 50%;
+    height: auto;
+    box-shadow: 15px 10px 50px rgba(0, 0, 0, 1);
+    opacity: 0;
+    animation: appearAnimation 2s ease-in-out forwards;
+}
+
+.olivier {
+    width: 100%;
+    height: auto;
+    font-size: 8em;
+}
+
+.olivierText {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #DDD0C8;
+}
+
+.hollebeke {
+    width: 100%;
+    height: auto;
+    font-size: 5em;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #DDD0C8;
+}
+
+h3 {
+    color: #DDD0C8
+}
+
+.presentation {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: #DDD0C8;
+}
+
+.textPresentation {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 15px 10px 50px rgba(0, 0, 0, 1);
+    opacity: 0;
+    animation: appearAnimation 3s ease-in-out forwards;
+}
+
+.textPresentation a {
+    text-decoration: none;
+    color: #F9B872;
+    transition: color 0.1s ease-in-out;
+}
+
+.textPresentation a:hover {
+    color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    color: #DDD0C8;
+}
+
+.cv {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    opacity: 0;
+    animation: appearAnimation 2s ease-in-out forwards;
+}
+
+code {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 15px 10px 50px rgba(0, 0, 0, 1);
+    color: #DDD0C8;
+}
+
+.margeBleue {
+    margin-left: 2em;
+    color: skyblue;
+}
+
+.bleuHtml {
+    color: dodgerblue;
+}
+
+.bleuClairHtml {
+    color: skyblue;
+}
+
+.orangeHtml {
+    color: #F9B872;
+}
+
+.marge {
+    margin-left: 1em;
+}
+
+.margeli {
+    margin-left: 2em;
+}
+
+@keyframes appearAnimation {
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 700px)  {
+    header {
+        flex-direction: column;
+    }
+    
+    header nav ul li {
+        display: contents;
+    }
+    
+    .reseaux {
+        text-align: center;
+    }
+
+    .logoreseau {
+        filter: grayscale(0%);
+        display: block;
+    }
+
+    .logoreseau a {
+        display: inline-block;
+    }
+
+
+}
