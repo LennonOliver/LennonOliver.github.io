@@ -5,7 +5,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Raleway", sans-serif;
-    background-color: #323232;
+    background: linear-gradient(hwb(0 0% 100% / 0.5),hwb(0 0% 100% / 0.8)), url("images/fond.jpg");
+    background-position: middle;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -40,11 +43,16 @@ nav {
 .reseaux {
     flex: 1;
     text-align: right;
+    /* background-color: blue; */
 }
 
 header nav ul {
     list-style-type: none;
     text-decoration: none;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
 }
 
 header nav ul li {
@@ -63,20 +71,34 @@ header nav ul li a:hover {
     color: white;
 }
 
-
-.logoreseau {
-    width: 30px;
-    filter: grayscale(100%);
-    transition: filter 0.1s;
-    margin-right: 1%;
+.logoLinkedin {
+    color: white;
+    /* background-color: #0A66C2; */
+    font-size: 2em;
 }
 
-.logoreseau a {
-    width: 30px;
-    filter: grayscale(100%);
-    transition: filter 0.1s;
-    margin-right: 2%;
-    border-radius: 50%;
+.lienLinkedin {
+    padding: 3px;
+}
+
+/* .lienLinkedin:hover { */
+    /* background-color: #0A66C2; */
+    /* border-radius: 50%; */
+/* } */
+
+
+
+.logoGithub {
+    color: white;
+    /* background-color: #E6EDF3; */
+    padding: 3px;
+    font-size: 2em;
+}
+
+.logoMail {
+    padding: 3px;
+    color: white;
+    font-size: 2em;
 }
 
 .logoreseau:hover {
@@ -87,48 +109,53 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    height: calc(100vh - 168.8px);
 }
 
 .partieGauche {
     flex: 1;
     text-align: right;
-    width: calc(33.33% - 20px);
+    /* width: calc(33.33% - 20px); */
     align-self: center;
     opacity: 0;
-    animation: appearAnimation 1s ease-in-out forwards;
+    animation: appearAnimation 2s ease-in-out forwards;
+    height: auto;
 }
 
 .partieDroite {
     flex: 1;
     text-align: left;
     align-self: center;
+    padding-left: 2%;
+    height: auto;
 }
 
 .maPhoto {
-    width: 50%;
+    width: 40%;
     border-radius: 50%;
     height: auto;
     box-shadow: 15px 10px 50px rgba(0, 0, 0, 1);
     opacity: 0;
-    animation: appearAnimation 2s ease-in-out forwards;
+    animation: rollIn 0.5s ease-in-out forwards;
 }
 
+@keyframes rollIn {
+    0% {
+        transform: translateX(100%) rotate(0deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) rotate(-360deg);
+        opacity: 1;
+    }
+}
 .olivier {
-    width: 100%;
+    /* width: 100%; */
     height: auto;
-    font-size: 8em;
+    font-size: 3em;
 }
 
 .olivierText {
-    color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #DDD0C8;
-}
-
-.hollebeke {
-    width: 100%;
-    height: auto;
-    font-size: 5em;
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #DDD0C8;
@@ -142,16 +169,17 @@ h3 {
     text-align: center;
     width: 100%;
     padding: 20px;
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     color: #DDD0C8;
+    height: max-content;
+    
 }
 
 .textPresentation {
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 15px 10px 50px rgba(0, 0, 0, 1);
+    /* box-shadow: 15px 10px 50px rgba(0, 0, 0, 1); */
     opacity: 0;
     animation: appearAnimation 3s ease-in-out forwards;
 }
@@ -167,13 +195,13 @@ h3 {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
     text-align: center;
     color: #DDD0C8;
+    display: flex;
+    justify-content: center;
 }
 
 .cv {
@@ -236,11 +264,12 @@ code {
     
     .reseaux {
         text-align: center;
+        display: flex;
     }
 
     .logoreseau {
         filter: grayscale(0%);
-        display: block;
+        
     }
 
     .logoreseau a {
