@@ -5,17 +5,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Raleway", sans-serif;
-    background: linear-gradient(hwb(0 0% 100% / 0.5),hwb(0 0% 100% / 0.8)), url("images/fond.jpg");
+    background: linear-gradient(hwb(0 0% 100% / 0.8),hwb(0 0% 100% / 0.8)), url("images/fond.jpg");
     background-position: middle;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
 }
 
 header {
-    padding: 20px;
+    padding: 0.8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    backdrop-filter: blur(2px);
 }
 
 
@@ -53,12 +55,13 @@ header nav ul {
     display: flex;
     justify-content: center;
     padding-left: 0;
+    
 }
 
 header nav ul li {
     display: inline;
-    font-size: 2em;
-    padding-right: 2%;
+    font-size: 1.5em;
+    padding-right: 3%;
 }
 
 header nav ul li a {
@@ -72,38 +75,38 @@ header nav ul li a:hover {
 }
 
 .logoLinkedin {
-    color: white;
-    /* background-color: #0A66C2; */
-    font-size: 2em;
+    width: 5%;
+    filter: grayscale(100%);
+    transition: filter 0.1s ease-in-out;
 }
 
-.lienLinkedin {
-    padding: 3px;
-}
-
-/* .lienLinkedin:hover { */
-    /* background-color: #0A66C2; */
-    /* border-radius: 50%; */
-/* } */
+.logoLinkedin:hover { 
+    filter: grayscale(0%);
+} 
 
 
 
 .logoGithub {
-    color: white;
-    /* background-color: #E6EDF3; */
-    padding: 3px;
-    font-size: 2em;
+    width: 5%;
+    filter: grayscale(100%);
+    transition: filter 0.1s ease-in-out;
+    padding-left: 1%;
 }
+
+.logoGithub:hover { 
+    filter: grayscale(0%);
+} 
 
 .logoMail {
-    padding: 3px;
-    color: white;
-    font-size: 2em;
+    width: 5%;
+    filter: grayscale(100%);
+    transition: filter 0.1s ease-in-out;
+    padding-left: 1%;
 }
 
-.logoreseau:hover {
+.logoMail:hover { 
     filter: grayscale(0%);
-}
+} 
 
 .container {
     display: flex;
@@ -175,7 +178,7 @@ header nav ul li a:hover {
 .olivier {
     /* width: 100%; */
     height: auto;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .olivierText {
@@ -218,13 +221,17 @@ h3 {
 }
 
 footer {
-    padding: 20px;
+    padding: 0.8%;
     width: 100%;
     box-sizing: border-box;
     text-align: center;
     color: #DDD0C8;
     display: flex;
     justify-content: center;
+    backdrop-filter: blur(2px);
+    /* background-color: cadetblue; */
+    position: absolute;
+    bottom: 0;
 }
 
 .cv {
@@ -242,7 +249,7 @@ code {
     border-radius: 10px;
     box-shadow: 15px 10px 50px rgba(0, 0, 0, 1);
     color: #DDD0C8;
-    font-size: 1.5em;
+    font-size: 80%;
 }
 
 .margeBleue {
@@ -269,7 +276,6 @@ code {
 .margeli {
     margin-left: 2em;
 }
-
 
 @media screen and (max-width: 700px)  {
     header {
