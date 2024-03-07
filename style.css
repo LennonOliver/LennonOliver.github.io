@@ -38,7 +38,7 @@ header {
     position: relative;
     padding: 0 2rem;
     background-color: rgba(0, 0, 0, 0.3);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .logo a {
@@ -147,7 +147,7 @@ main {
     box-shadow: 9px 9px 20px black;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .ma-photo {
@@ -186,7 +186,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 /* ----------BURGER MENU---------- */
@@ -247,5 +247,9 @@ footer {
     .burger-menu {
         left: 2rem;
         width: unset;
+    }
+
+    .ma-photo {
+        width: 160px;
     }
 }
