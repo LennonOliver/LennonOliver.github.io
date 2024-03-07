@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Light.ttf') format('trueType');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url(./assets/img/fond.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #C1D0B9;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #C1D0B9;
+}
+
+.links a:hover {
+    color: #FA6639;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logo a {
+    color: #4FF2AE;
+    text-shadow: 9px 9px 20px #C1D0B9;
+}
+
+.logo a:hover {
+    color: #C1D0B9;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .burger-menu-button {
+    color: #C1D0B9;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+    gap: 0.5rem;
+}
+
+.logo-linkedin {
+    padding: 0.7rem;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 50%;
+}
+
+.logo-linkedin:hover {
+    color: white;
+    background-color: #0B66C2;
+    border-radius: 50%;
+}
+
+.logo-github {
+    padding: 0.7rem;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 50%;
+}
+
+.logo-github:hover {
+    color: white;
+    background-color: #840B84;
+    border-radius: 50%;
+}
+
+.logo-mail {
+    padding: 0.7rem;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 50%;
+}
+
+.logo-mail:hover {
+    color: white;
+    background-color: #F5493D;
+    border-radius: 50%;
+}
+
+.logo-phone {
+    padding: 0.7rem;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 50%;
+}
+
+.logo-phone:hover {
+    color: white;
+    background-color: #27C41A;
+    border-radius: 50%;
+}
+
+/* ----------BURGER MENU---------- */
+
+.burger-menu {
+    /* display: none; */
+    height: 0;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    border-radius: 10px;
+    transition: height 0.3s ease-in-out;
+}
+
+.burger-menu.open {
+    height: 250px;
+}
+
+.burger-menu li,
+.burger-menu .social {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider {
+    height: 1px;
+    background-color: #4FF2AE;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ----------RESPONSIVE---------- */
+
+@media (max-width: 990px) {
+    header {
+        background: none;
+    }
+
+    .navbar .links,
+    .navbar .social {
+        display: none;
+    }
+
+    .navbar .burger-menu-button {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .burger-menu {
+        left: 2rem;
+        width: unset;
+    }
+}
