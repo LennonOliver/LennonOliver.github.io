@@ -17,6 +17,8 @@ body {
     background-size: cover;
     background-position: center;
     color: #C1D0B9;
+    display: flex;
+    flex-direction: column;
 }
 
 li {
@@ -36,6 +38,7 @@ header {
     position: relative;
     padding: 0 2rem;
     background-color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
 }
 
 .logo a {
@@ -126,6 +129,64 @@ header {
     color: white;
     background-color: #27C41A;
     border-radius: 50%;
+}
+
+main {
+    flex-grow: 1;
+    /* background-color: green; */
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.metier {
+    color: #4FF2AE;
+}
+
+.description-metier {
+    box-shadow: 9px 9px 20px black;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.ma-photo {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 9px 9px 20px black;
+}
+
+.divider-main {
+    height: 2px;
+    background-color: #4FF2AE;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px 20px;
+}
+
+.presentation {
+    box-shadow: 9px 9px 20px black;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 0.7rem;
+}
+
+.presentation a {
+    color: #4FF2AE;
+}
+
+.presentation a:hover {
+    color: #FA6639;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
 }
 
 /* ----------BURGER MENU---------- */
