@@ -76,6 +76,7 @@ header {
     position: fixed;
     top: 0.7em;
     right: 0.7em;
+    z-index: 2;
 }
 
 .social {
