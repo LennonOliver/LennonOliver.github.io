@@ -161,7 +161,7 @@ main {
     border-radius: 10px;
     margin-top: 20px;
     opacity: 0;
-    animation: fadeIn 0.6s ease-in-out forwards;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 .ma-photo {
@@ -169,7 +169,7 @@ main {
     border-radius: 50%;
     box-shadow: 9px 9px 20px black;
     opacity: 0;
-    animation: fadeIn 0.3s ease-in-out forwards;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 .divider-main {
@@ -179,7 +179,7 @@ main {
     margin-right: auto;
     margin: 20px 20px;
     opacity: 0;
-    animation: fadeIn 0.7s ease-in-out forwards;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 .presentation {
