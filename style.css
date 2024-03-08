@@ -534,19 +534,15 @@ footer {
     right: 2rem;
     top: 60px;
     width: 200px;
-    background-color: rgba(0, 0, 0, 0.3);
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
     overflow: hidden;
     border-radius: 10px;
     transition: height 0.3s ease-in-out;
     z-index: 2;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 }
 
 .burger-menu.open {
     height: 250px;
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
 }
 
 .burger-menu li,
