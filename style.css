@@ -3,7 +3,6 @@
     src: url('./assets/fonts/Poppins-Light.ttf') format('trueType');
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -139,6 +138,15 @@ main {
     text-align: center;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .metier {
     color: #4FF2AE;
 }
@@ -148,12 +156,16 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 0.6s ease-in-out forwards;
 }
 
 .ma-photo {
     width: 300px;
     border-radius: 50%;
     box-shadow: 9px 9px 20px black;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 
 .divider-main {
@@ -162,6 +174,8 @@ main {
     margin-left: auto;
     margin-right: auto;
     margin: 20px 20px;
+    opacity: 0;
+    animation: fadeIn 0.7s ease-in-out forwards;
 }
 
 .presentation {
@@ -169,6 +183,8 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 0.7rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 .presentation a {
@@ -204,6 +220,7 @@ footer {
     overflow: hidden;
     border-radius: 10px;
     transition: height 0.3s ease-in-out;
+    z-index: 2;
 }
 
 .burger-menu.open {
