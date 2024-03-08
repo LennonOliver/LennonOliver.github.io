@@ -267,9 +267,10 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-40%, -130%);
     font-size: 1.5rem;
     color: #C1D0B9;
+    font-weight: bold;
+    transform: translate(-40%, -140%);
 }
 
 .html h1 {
@@ -287,7 +288,8 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-40%, -130%);
+    font-weight: bold;
+    transform: translate(-40%, -140%);
     font-size: 1.5rem;
     color: #C1D0B9;
 }
@@ -330,7 +332,8 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-40%, -130%);
+    font-weight: bold;
+    transform: translate(-40%, -140%);
     font-size: 1.5rem;
     color: #C1D0B9;
 }
@@ -379,7 +382,8 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-40%, -130%);
+    font-weight: bold;
+    transform: translate(-40%, -140%);
     font-size: 1.5rem;
     color: #C1D0B9;
 }
@@ -428,7 +432,8 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-40%, -130%);
+    font-weight: bold;
+    transform: translate(-40%, -140%);
     font-size: 1.5rem;
     color: #C1D0B9;
 }
@@ -477,7 +482,8 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-40%, -130%);
+    font-weight: bold;
+    transform: translate(-40%, -140%);
     font-size: 1.5rem;
     color: #C1D0B9;
 }
@@ -522,7 +528,8 @@ footer {
 
 .burger-menu {
     /* display: none; */
-    height: 0;
+    height: 0px;
+    bottom: 0px;
     position: fixed;
     right: 2rem;
     top: 60px;
@@ -538,6 +545,8 @@ footer {
 
 .burger-menu.open {
     height: 250px;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
 }
 
 .burger-menu li,
