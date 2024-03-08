@@ -73,6 +73,9 @@ header {
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
+    position: fixed;
+    top: 0.7em;
+    right: 0.7em;
 }
 
 .social {
@@ -205,12 +208,321 @@ footer {
     margin-top: 20px;
 }
 
+/* .main-competences {
+} */
+
+.programmation {
+    box-shadow: 9px 9px 20px black;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 0.7rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.programmation h3 {
+    color: #4FF2AE;
+}
+
+.programmation fieldset {
+    padding: 0.7rem;
+    display: flex;
+    border-radius: 10px;
+    color: #C1D0B9;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.html svg {
+    height: 150px;
+    width: 150px;
+}
+
+.html svg circle {
+    fill: none;
+    /* backdrop-filter: blur(150px); */
+    stroke: #4FF2AE;
+    stroke-width: 10px;
+    transform: translate(5px,5px);
+    animation: circle-html 2s forwards;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+
+@keyframes circle-html {
+    to {
+        stroke-dashoffset: 88;
+    }
+}
+
+.html {
+    position: relative;
+    padding: 0.7rem;
+}
+
+.html span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -130%);
+    font-size: 1.5rem;
+    color: #C1D0B9;
+}
+
+.html h1 {
+    text-align: center;
+    color:#C1D0B9;
+    margin-top: 10px;
+}
+
+.css {
+    position: relative;
+    padding: 0.7rem;
+}
+
+.css span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -130%);
+    font-size: 1.5rem;
+    color: #C1D0B9;
+}
+
+.css h1 {
+    text-align: center;
+    color:#C1D0B9;
+    margin-top: 10px;
+}
+
+.css svg {
+    height: 150px;
+    width: 150px;
+    /* background-color: #0B66C2; */
+}
+
+.css svg circle {
+    fill: none;
+    stroke: #4FF2AE;
+    stroke-width: 10px;
+    transform: translate(5px,5px);
+    animation: circle-css 2s forwards;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+
+@keyframes circle-css {
+    to {
+        stroke-dashoffset: 220;
+    }
+}
+
+.js {
+    position: relative;
+    padding: 0.7rem;
+}
+
+.js span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -130%);
+    font-size: 1.5rem;
+    color: #C1D0B9;
+}
+
+.js h1 {
+    text-align: center;
+    color:#C1D0B9;
+    margin-top: 10px;
+}
+
+.js h1 {
+    text-align: center;
+    color:#C1D0B9;
+    margin-top: 10px;
+}
+
+.js svg {
+    height: 150px;
+    width: 150px;
+    /* background-color: #0B66C2; */
+}
+
+.js svg circle {
+    fill: none;
+    stroke: #4FF2AE;
+    stroke-width: 10px;
+    transform: translate(5px,5px);
+    animation: circle-js 2s forwards;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+
+@keyframes circle-js {
+    to {
+        stroke-dashoffset: 352;
+    }
+}
+
+.sql {
+    position: relative;
+    padding: 0.7rem;
+}
+
+.sql span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -130%);
+    font-size: 1.5rem;
+    color: #C1D0B9;
+}
+
+.sql h1 {
+    text-align: center;
+    color:#C1D0B9;
+    margin-top: 10px;
+}
+
+.sql h1 {
+    text-align: center;
+    color:#C1D0B9;
+    margin-top: 10px;
+}
+
+.sql svg {
+    height: 150px;
+    width: 150px;
+    /* background-color: #0B66C2; */
+}
+
+.sql svg circle {
+    fill: none;
+    stroke: #4FF2AE;
+    stroke-width: 10px;
+    transform: translate(5px,5px);
+    animation: circle-sql 2s forwards;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+
+@keyframes circle-sql {
+    to {
+        stroke-dashoffset: 88;
+    }
+}
+
+.php {
+    position: relative;
+    padding: 0.7rem;
+}
+
+.php span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -130%);
+    font-size: 1.5rem;
+    color: #C1D0B9;
+}
+
+.php h1 {
+    text-align: center;
+    color:#C1D0B9;
+    margin-top: 10px;
+}
+
+.php h1 {
+    text-align: center;
+    color:#C1D0B9;
+    margin-top: 10px;
+}
+
+.php svg {
+    height: 150px;
+    width: 150px;
+    /* background-color: #0B66C2; */
+}
+
+.php svg circle {
+    fill: none;
+    stroke: #4FF2AE;
+    stroke-width: 10px;
+    transform: translate(5px,5px);
+    animation: circle-php 2s forwards;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+
+@keyframes circle-php {
+    to {
+        stroke-dashoffset: 400;
+    }
+}
+
+.express {
+    position: relative;
+    padding: 0.7rem;
+}
+
+.express span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -130%);
+    font-size: 1.5rem;
+    color: #C1D0B9;
+}
+
+.express h1 {
+    text-align: center;
+    color:#C1D0B9;
+    margin-top: 10px;
+}
+
+.express h1 {
+    text-align: center;
+    color:#C1D0B9;
+    margin-top: 10px;
+}
+
+.express svg {
+    height: 150px;
+    width: 150px;
+    /* background-color: #0B66C2; */
+}
+
+.express svg circle {
+    fill: none;
+    stroke: #4FF2AE;
+    stroke-width: 10px;
+    transform: translate(5px,5px);
+    animation: circle-express 2s forwards;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+
+@keyframes circle-express {
+    to {
+        stroke-dashoffset: 400;
+    }
+}
+
+
 /* ----------BURGER MENU---------- */
 
 .burger-menu {
     /* display: none; */
     height: 0;
-    position: absolute;
+    position: fixed;
     right: 2rem;
     top: 60px;
     width: 200px;
@@ -260,7 +572,7 @@ footer {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 650px) {
     .burger-menu {
         left: 2rem;
         width: unset;
@@ -268,5 +580,9 @@ footer {
 
     .ma-photo {
         width: 160px;
+    }
+
+    .programmation fieldset {
+        flex-direction: column;
     }
 }
