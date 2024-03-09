@@ -247,7 +247,7 @@ footer {
     stroke: #4FF2AE;
     stroke-width: 10px;
     transform: translate(5px,5px);
-    animation: circle-html 2s forwards;
+    animation: circle-html 5s forwards;
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
     stroke-linecap: round;
@@ -312,7 +312,7 @@ footer {
     stroke: #4FF2AE;
     stroke-width: 10px;
     transform: translate(5px,5px);
-    animation: circle-css 2s forwards;
+    animation: circle-css 5s forwards;
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
     stroke-linecap: round;
@@ -362,7 +362,7 @@ footer {
     stroke: #4FF2AE;
     stroke-width: 10px;
     transform: translate(5px,5px);
-    animation: circle-js 2s forwards;
+    animation: circle-js 5s forwards;
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
     stroke-linecap: round;
@@ -412,7 +412,7 @@ footer {
     stroke: #4FF2AE;
     stroke-width: 10px;
     transform: translate(5px,5px);
-    animation: circle-sql 2s forwards;
+    animation: circle-sql 5s forwards;
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
     stroke-linecap: round;
@@ -462,7 +462,7 @@ footer {
     stroke: #4FF2AE;
     stroke-width: 10px;
     transform: translate(5px,5px);
-    animation: circle-php 2s forwards;
+    animation: circle-php 5s forwards;
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
     stroke-linecap: round;
@@ -512,7 +512,7 @@ footer {
     stroke: #4FF2AE;
     stroke-width: 10px;
     transform: translate(5px,5px);
-    animation: circle-express 2s forwards;
+    animation: circle-express 5s forwards;
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
     stroke-linecap: round;
