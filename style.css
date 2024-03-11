@@ -36,7 +36,7 @@ a {
 header {
     position: relative;
     padding: 0 2rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     margin-bottom: 20px;
 }
 
@@ -157,7 +157,7 @@ main {
 
 .description-metier {
     box-shadow: 9px 9px 20px black;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     margin-top: 20px;
     opacity: 0;
@@ -184,7 +184,7 @@ main {
 
 .presentation {
     box-shadow: 9px 9px 20px black;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     padding: 0.7rem;
     opacity: 0;
@@ -201,7 +201,7 @@ main {
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     height: 60px;
     display: flex;
     justify-content: center;
@@ -215,7 +215,7 @@ footer {
 
 .programmation {
     box-shadow: 9px 9px 20px black;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     padding: 0.7rem;
     opacity: 0;
