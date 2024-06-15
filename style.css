@@ -139,9 +139,7 @@ header {
 
 main {
     flex-grow: 1;
-    /* background-color: green; */
     margin: 0 auto;
-    padding: 0 2rem;
     text-align: center;
 }
 
@@ -528,6 +526,10 @@ footer {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 5px;
     text-align: justify;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .exp h1 {
