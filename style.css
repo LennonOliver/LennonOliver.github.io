@@ -3,7 +3,8 @@
     src: url('./assets/fonts/Poppins-Light.ttf') format('trueType');
 }
 
-* {
+*,
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,10 +12,12 @@
 }
 
 body {
-    height: 100vh;
+    /* height: 100vh; */
     background-image: url(./assets/img/fond.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+        background-attachment: fixed;
     color: #C1D0B9;
     display: flex;
     flex-direction: column;
@@ -146,6 +149,7 @@ main {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -202,16 +206,13 @@ main {
 
 footer {
     background-color: rgba(0, 0, 0, 0.6);
-    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 20px;
+    color: #C1D0B9;
 }
-
-/* .main-competences {
-} */
 
 .programmation {
     box-shadow: 9px 9px 20px black;
@@ -246,7 +247,7 @@ footer {
     /* backdrop-filter: blur(150px); */
     stroke: #4FF2AE;
     stroke-width: 10px;
-    transform: translate(5px,5px);
+    transform: translate(5px, 5px);
     animation: circle-html 5s forwards;
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
@@ -276,7 +277,7 @@ footer {
 
 .html h1 {
     text-align: center;
-    color:#C1D0B9;
+    color: #C1D0B9;
     margin-top: 10px;
 }
 
@@ -297,7 +298,7 @@ footer {
 
 .css h1 {
     text-align: center;
-    color:#C1D0B9;
+    color: #C1D0B9;
     margin-top: 10px;
 }
 
@@ -311,7 +312,7 @@ footer {
     fill: none;
     stroke: #4FF2AE;
     stroke-width: 10px;
-    transform: translate(5px,5px);
+    transform: translate(5px, 5px);
     animation: circle-css 5s forwards;
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
@@ -341,13 +342,13 @@ footer {
 
 .js h1 {
     text-align: center;
-    color:#C1D0B9;
+    color: #C1D0B9;
     margin-top: 10px;
 }
 
 .js h1 {
     text-align: center;
-    color:#C1D0B9;
+    color: #C1D0B9;
     margin-top: 10px;
 }
 
@@ -361,7 +362,7 @@ footer {
     fill: none;
     stroke: #4FF2AE;
     stroke-width: 10px;
-    transform: translate(5px,5px);
+    transform: translate(5px, 5px);
     animation: circle-js 5s forwards;
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
@@ -391,13 +392,13 @@ footer {
 
 .sql h1 {
     text-align: center;
-    color:#C1D0B9;
+    color: #C1D0B9;
     margin-top: 10px;
 }
 
 .sql h1 {
     text-align: center;
-    color:#C1D0B9;
+    color: #C1D0B9;
     margin-top: 10px;
 }
 
@@ -411,7 +412,7 @@ footer {
     fill: none;
     stroke: #4FF2AE;
     stroke-width: 10px;
-    transform: translate(5px,5px);
+    transform: translate(5px, 5px);
     animation: circle-sql 5s forwards;
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
@@ -441,13 +442,13 @@ footer {
 
 .php h1 {
     text-align: center;
-    color:#C1D0B9;
+    color: #C1D0B9;
     margin-top: 10px;
 }
 
 .php h1 {
     text-align: center;
-    color:#C1D0B9;
+    color: #C1D0B9;
     margin-top: 10px;
 }
 
@@ -461,7 +462,7 @@ footer {
     fill: none;
     stroke: #4FF2AE;
     stroke-width: 10px;
-    transform: translate(5px,5px);
+    transform: translate(5px, 5px);
     animation: circle-php 5s forwards;
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
@@ -491,13 +492,13 @@ footer {
 
 .express h1 {
     text-align: center;
-    color:#C1D0B9;
+    color: #C1D0B9;
     margin-top: 10px;
 }
 
 .express h1 {
     text-align: center;
-    color:#C1D0B9;
+    color: #C1D0B9;
     margin-top: 10px;
 }
 
@@ -511,7 +512,7 @@ footer {
     fill: none;
     stroke: #4FF2AE;
     stroke-width: 10px;
-    transform: translate(5px,5px);
+    transform: translate(5px, 5px);
     animation: circle-express 5s forwards;
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
@@ -524,6 +525,36 @@ footer {
     }
 }
 
+.exp {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    text-align: justify;
+}
+
+.exp h1 {
+    color: #4FF2AE;
+    text-shadow: 9px 9px 50px #C1D0B9;
+}
+
+.exp h3 {
+    color: #FA6639;
+    text-shadow: 9px 9px 50px #FA6639;
+}
+
+.exp section {
+    padding: 5px;
+    margin-bottom: 10px;
+    color: #C1D0B9;
+}
+
+.exp li {
+    list-style: circle;
+}
+
+.exp h1,
+.exp h3 {
+    text-align: center;
+}
 
 /* ----------BURGER MENU---------- */
 
